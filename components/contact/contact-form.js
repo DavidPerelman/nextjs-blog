@@ -52,7 +52,6 @@ function ContactForm() {
       setEnteredName('');
       setEnteredMessage('');
     } catch (error) {
-      console.log('error!');
       setRequestStatus('error');
       setRequestError(error.message);
     }
@@ -77,7 +76,6 @@ function ContactForm() {
   }
 
   if (requestStatus === 'error') {
-    console.log('requestStatus');
     notification = {
       status: 'error',
       title: 'Error!',
